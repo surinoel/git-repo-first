@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+void print_hello()
+{
+  printf("hello\n");
+}
+
 int main(void)
 {
   printf("Hello Git World!\n");
