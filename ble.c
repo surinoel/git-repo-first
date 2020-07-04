@@ -10,4 +10,7 @@ void ble_init()
 int ble_send_data(const char *msg)
 {
   // 한 바이트씩 전송
+  for(int i=0; i<strlen(msg); ++i) {
+    uart_send_byte(msg[i]);
+  }
 }
